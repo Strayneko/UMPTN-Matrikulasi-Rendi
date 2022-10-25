@@ -1,0 +1,155 @@
+/*
+* ===============
+* Resetting style
+* ===============
+*/
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+
+body{
+    background-image: url('../images/build.jpg');
+    background-position: center;
+    background-size: cover;
+}
+body::after{
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container {
+    overflow: hidden;
+    width: 82%;
+
+    margin: 25px auto;
+
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    z-index: 12;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.banner{
+    position: relative;
+    background-image: url('../images/buildings.jpeg');
+    width: 100%;
+    height: 14rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.profile-image{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: -2.5rem;
+    position: absolute;
+    left: 5rem;
+}
+.content{
+    height: 10rem;
+    margin-top: 2.7rem;
+    display: flex;
+}
+.info{
+        width: 30%;
+        text-align: center;
+        font-weight: bold;
+}
+.info small{
+    color: rgb(107 114 128);
+    
+}
+.name{
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+color: rgb(55 65 81);
+display: block;
+
+text-align: center;
+}
+.about{
+    width: 70%;
+
+    padding-bottom: 1.5rem;
+}
+.title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+.title::after{
+    content: '';
+    display: block;
+    width: 5%;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+}
+.about p{
+    margin: .5rem;
+}
+.contact .github img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+        transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+            -moz-transition: all .5s linear;
+            -ms-transition: all .5s linear;
+            -o-transition: all .5s linear;
+    
+}
+.contact .github img:hover{
+     transform: scale(1.25);
+     -webkit-transform: scale(1.25);
+     -moz-transform: scale(1.25);
+     -ms-transform: scale(1.25);
+     -o-transform: scale(1.25);
+     transition: all .5s linear;
+     -webkit-transition: all .5s linear;
+     -moz-transition: all .5s linear;
+     -ms-transition: all .5s linear;
+     -o-transition: all .5s linear;
+}
+.contact > div{
+    color: rgb(2 132 199);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+hr{
+    width: 80%;
+    margin: .25rem auto;
+    height: 2px;
+   background-color: gray;
+}
